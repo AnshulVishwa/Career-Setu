@@ -6,6 +6,7 @@ import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: "AIzaSyC41FBqt907XWwFGYKGABg5AHU6L0AFwcM",
   authDomain: "custom-app-368a6.firebaseapp.com",
+  databaseURL: "https://custom-app-368a6-default-rtdb.firebaseio.com/",
   projectId: "custom-app-368a6",
   storageBucket: "custom-app-368a6.appspot.com",
   messagingSenderId: "146150794923",
