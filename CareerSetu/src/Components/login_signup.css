@@ -66,20 +66,18 @@ h1{
 }
 .buttons {
     background-color: #D9D9D9;
-    color: #081F2E;
+    color: #565454;
     outline: none;
     border: none;
     border-radius: 2em;
     width: 6em;
     height: 3em;
-    box-shadow: 4px 4px 4px #00000040;
-    text-shadow: 1px 1px 5px #081f2e90;
+    box-shadow: 2px 3px 4px 1px #c7c7c7;
 }
-.buttons:hover{
-    box-shadow: 5px 5px 4px #00000040, inset 5px 5px 15px #00000040;
+.buttons:hover {
+    box-shadow: 2px 5px 5px #afafaf, inset 5px 8px 15px #8a8787;
     transition-duration: 0.3s;
 }
-
 .signSubmit{
     background-color: #045174;
     outline: none;

@@ -18,7 +18,7 @@ function Login() {
             <input placeholder= 'Password' />
             <div className='alter'>
               <span><a className='haveAccount' href=''>Forgot Password?</a></span>
-              <span><a className='haveAccount' href=''>SignUp</a></span>
+              <span><a className='haveAccount' href='/signup'>SignUp</a></span>
             </div>
           </div>
           <button onClick={() => {

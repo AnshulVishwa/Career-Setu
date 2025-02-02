@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./login_signup.css"
 import image from "../assets/Login.png"
 import logo from "../assets/logo.png"
+import TextBox from './Fundamentals/TextBox'
 
 function Signup() {
+  const [inputVal , setInputVal] = useState(null)
+  const [password , setPassword] = useState(null)
+  const [ pos , setPos ] = useState(null)
+
+  const [ display , setDisplay ] = useState("none")
   return (
     <main>
+      <TextBox msg={"Galat bete"} type="error" display={display} />
+      {/* <Alert msg={"Invalid"} type="warning" /> */}
       <img className = "image" src={image} />
       <div className = "elements" >
         <div className = "logo" >
@@ -17,8 +25,8 @@ function Signup() {
           <div className='passwordDiv'>
             <input placeholder= 'Enter Password' />
             <div className='alter'>
-              <span><a className='haveAccount' href=''>Have an account?</a></span>
-              <span><a className='haveAccount' href=''>Login</a></span>
+              <span><a className='haveAccount' href='/login'>Have an account?</a></span>
+              <span><a className='haveAccount' href='/login'>Login</a></span>
             </div>
           </div>
           <div className = "options">
@@ -27,6 +35,7 @@ function Signup() {
             <button className='buttons'>Faculty</button>
           </div>
           <button onClick={() => {
+            
             window.location.href = "/startup"
           }} className = "signSubmit" >Submit</button>
         </div>

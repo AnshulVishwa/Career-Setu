@@ -5,6 +5,8 @@ import App from '../App'
 import Login from '../Components/Login';
 import StartAnimation from '../Components/StartAnimation';
 import Signup from '../Components/Signup';
+import TextBox from '../Components/Fundamentals/TextBox';
+import HomePage from '../Components/Home/HomePage';
 function AppRoutes() {
   return (
     <>
@@ -13,6 +15,8 @@ function AppRoutes() {
           <Route path ="/login" element = {<Login />}></Route>
           <Route path ="/signup" element = {<Signup />}></Route>
           <Route path='/startup' element = { <StartAnimation /> } ></Route>
+          <Route path='/textbox' element = { <TextBox /> } ></Route>
+          <Route path='/homepage' element = { <HomePage /> } ></Route>
         </Routes>
     </>
   )
