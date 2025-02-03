@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.alltask {
+    /* background-color: aqua; */
+    height: 16em;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+}
+.taskmenu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.triangle {
+    transition: all;
+    transition-duration: 0.5s;
+    display: none;
+    position: absolute;
+    top: 9em;
+    width: 14em;
+    padding: 8px;
+}
+.task {
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #081F2E, #383838);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.upperDiv, .midDiv, .lowerDiv {
+    display: flex;
+}
+.upperDiv {
+    height: 5em;
+    width: 13.8em;
+    justify-content: space-between;
+    align-items: center;
+}
+.midDiv {
+    justify-content: space-around;
+    height: 3em;
+    width: 13em;
+    align-items: center;
+}
+.lowerDiv {
+    align-items: center;
+    justify-content: center;
+    width: 13em;
+}
